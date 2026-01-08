@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SobreMim from "./components/SobreMim";
+import Hero from "./components/Hero";
+
 
 import Skills from "./pages/skills";
 import Portifolio from "./pages/portifolio";
@@ -19,6 +22,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <Header />
+      <Hero />  
+      <SobreMim />
+       
 
       <Routes>
         <Route path="/" element={<Home />} />
