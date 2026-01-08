@@ -1,0 +1,108 @@
+/* src/components/header.css */
+
+.hdr {
+  background: #EDCFE7; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.hdr__nav,
+.hdr__link,
+.hdr__iconBtn {
+  font-family: 'Inter', sans-serif;
+}
+
+.hdr__inner {
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 80px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.hdr__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #5F0F40;
+}
+
+.hdr__mark {
+  font-family: 'Playwrite RO', cursive;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  font-size: 20px;
+}
+
+.hdr__name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.hdr__nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 18px;
+}
+
+.hdr__link {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-weight: 500;
+  padding: 6px 2px;
+}
+
+.hdr__link.is-active {
+  color: #E36414;
+  font-weight: 700;
+}
+
+.hdr__right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hdr__iconBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  color: #1b1b1b;
+}
+
+.hdr__iconBtn:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.hdr__cta {
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.hdr__cta:hover {
+  opacity: 0.9;
+}
+
+/* Responsivo: em telas pequenas, some o menu e mantém marca + botão */
+@media (max-width: 720px) {
+  .hdr__nav {
+    display: none;
+  }
+}
