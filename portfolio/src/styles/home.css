@@ -83,7 +83,7 @@
 .hero__imgWrap {
   position: relative;
   z-index: 2;
-  width: min(500px, 80%);
+  width: min(590px, 100%);
   aspect-ratio: 1/1.2;
   border-radius: 18px;
   overflow: hidden;
@@ -100,6 +100,7 @@
 .about {
   background: #1f1f1f;
   color: #fff;
+  height: 500px;
 }
 
 .about__inner {
@@ -112,13 +113,13 @@
 
 .about__title {
   font-family: "Poppins", sans-serif;
-  font-size: 28px;
+  font-size: 35px;
   margin: 0 0 14px;
 }
 
 .about__text {
   font-family: "Inter", sans-serif;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 1.7;
   color: rgba(255,255,255,0.8);
   max-width: 90ch;
@@ -142,20 +143,21 @@
 
 .stat__label {
   font-family: "Inter", sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(255,255,255,0.9);
 }
 
 .about__dot {
-  width: 120px;
-  height: 120px;
-  background: #8d001b;
-  border-radius: 999px;
+  width: 200px;
+  height: 100px;
+  background: #9a031e;
+  border-radius: 120px 120px 0px 0px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -60px;
+  bottom: -67px;
   opacity: 0.9;
+
 }
 
 /* Responsivo */
@@ -166,7 +168,5 @@
   .hero__right {
     min-height: 260px;
   }
-  .hero__ux {
-    right: -10px;
-  }
+
 }

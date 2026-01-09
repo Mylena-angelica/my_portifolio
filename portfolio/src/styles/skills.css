@@ -1,0 +1,95 @@
+.skills {
+  background: #ffffff;
+  padding: 80px 0 90px;
+}
+
+.skills__inner {
+  max-width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.skills__head {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.skills__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 0.2px;
+  color: #1b1b1b;
+  margin: 0 0 10px;
+}
+
+.skills__subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.62);
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 54px;
+  align-items: start;
+}
+
+.skills__card {
+  min-width: 0;
+}
+
+.skills__icon {
+  width: 40px;
+  height: 40px;
+  color: #e36414; 
+  margin-bottom: 18px;
+}
+
+.skills__icon svg {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.skills__cardTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #1b1b1b;
+  margin: 0 0 14px;
+}
+
+.skills__text {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.62);
+  margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 980px) {
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  .skills {
+    padding: 64px 0 70px;
+  }
+
+  .skills__title {
+    font-size: 28px;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
