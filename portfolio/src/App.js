@@ -1,31 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import SobreMim from "./components/SobreMim";
-import Hero from "./components/Hero";
-import SkillsSection from "./components/SkillsSection";
 
-
+import Home from "./pages/home"; 
 import Skills from "./pages/skills";
 import Portifolio from "./pages/portifolio";
 import Curriculo from "./pages/curriculo";
 import Contato from "./pages/contato";
 
-function Home() {
-  return (
-    <main style={{ padding: "80px 40px" }}>
-      <h1>Home / Landing Page</h1>
-    </main>
-  );
-}
-
 export default function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Hero />  
-      <SobreMim />
-      <SkillsSection /> 
 
       <Routes>
         <Route path="/" element={<Home />} />
