@@ -1,0 +1,339 @@
+/* src/styles/curriculo.css */
+
+/* ============================= */
+/* BASE */
+/* ============================= */
+
+.cvPage {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.cvSection {
+  padding: 90px 0;
+}
+
+.cvInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+
+.cvTitle {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.cvSubtitle {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 48px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+
+.cvText {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.cvSection--hero {
+  background: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.cvHero {
+  text-align: center;
+}
+
+.cvHero__name {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #1f1f1f;
+}
+
+.cvHero__role {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  color: #4a4a4a;
+  margin-bottom: 46px;
+}
+
+
+.cvHero__avatarWrap {
+  position: relative;
+  width: 230px;
+  height:230px;
+  margin: 0 auto 46px;
+  display: grid;
+  place-items: center;
+}
+
+.cvHero__circle {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background: #8d001b;
+  border-radius: 999px;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.cvHero__photo {
+  position: relative;
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+/* Contatos */
+.cvHero__contacts {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 22px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cvHero__contacts span {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+
+.cvHero__contacts p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #4a4a4a;
+}
+
+
+/* ============================= */
+/* SKILLS */
+/* ============================= */
+
+.cvSection--skills {
+  background: #edcfe7;
+}
+
+.cvSkillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 36px;
+  margin-top: 40px;
+}
+
+.cvSkillBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cvSkillTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #1f1f1f;
+}
+
+.cvIcons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 18px;
+}
+
+.cvIconItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.cvIcon {
+  font-size: 35px;
+  color: #1f1f1f;
+}
+
+.cvIconLabel {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+
+/* ============================= */
+/* EXPERIÊNCIA – 1F1F1F */
+/* ============================= */
+
+.cvSection--experience {
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+.cvSection--experience * {
+  color: #ffffff;
+}
+
+.cvTimeline {
+  display: grid;
+  gap: 42px;
+}
+
+.cvTimelineItem {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 24px;
+}
+
+.cvTimelineYear {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.cvTimelineTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cvTimelineText {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+/* ============================= */
+/* EDUCAÇÃO – BRANCO */
+/* ============================= */
+
+.cvSection--education {
+  background: #ffffff;
+}
+
+/* ============================= */
+/* ARTIGOS – EDCFE7 */
+/* ============================= */
+
+.cvSection--articles {
+  background: #edcfe7;
+}
+
+.cvArticlesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+.cvArticleCard {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================= */
+/* CURSOS E CERTIFICADOS – 1F1F1F */
+/* ============================= */
+
+.cvSection--courses {
+  background: #1f1f1f;
+  color: #ffffff;
+}
+
+.cvSection--courses * {
+  color: #ffffff;
+}
+
+.cvCoursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.cvCourseCard {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ============================= */
+/* PREMIAÇÕES – BRANCO */
+/* ============================= */
+
+.cvSection--awards {
+  background: #ffffff;
+}
+
+.cvAwardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.cvAwardCard {
+  border-radius: 14px;
+  padding: 22px;
+  background: #f5f5f5;
+}
+
+/* ============================= */
+/* RESPONSIVO */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .cvTitle {
+    font-size: 30px;
+  }
+
+  .cvHero__name {
+    font-size: 34px;
+  }
+
+  .cvTimelineItem {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .cvHero__contacts {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 26px;
+  }
+}
+
+@media (max-width: 520px) {
+  .cvHero__contacts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cvHero__name {
+    font-size: 34px;
+  }
+}
