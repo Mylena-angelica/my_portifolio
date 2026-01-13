@@ -13,7 +13,7 @@ import recrutamentoImg from "../img/curriculo/Recrutamento.png";
 import imobiliariaImg from "../img/curriculo/Imobiliaria.png";
 
 import { PythonIcon, HtmlIcon, CssIcon, JavaScriptIcon, CIcon, RIcon } from "../components/icons";
-import { ReactIcon, NodeIcon, ExpressIcon,  TailwindIcon,  BootstrapIcon,  FigmaIcon, GitIcon, WordpressIcon,ScrumIcon,  MySqlIcon,PostgresIcon,
+import { ReactIcon, NodeIcon, ExpressIcon,  TailwindIcon,  BootstrapIcon,  FigmaIcon, GitIcon, WordpressIcon,DockerIcon,  MySqlIcon,PostgresIcon,
   MongoDbIcon, OracleIcon, WindowsIcon, LinuxIcon, ChinaFlag, BrazilFlag, ArgentinaFlag, UkFlag,} from "../components/icons";
 
 function Skill({ icon, label }) {
@@ -126,7 +126,7 @@ export default function Curriculo() {
                     <Skill icon={<GitIcon />} label="Git" />
                     <Skill icon={<FigmaIcon />} label="Figma" />
                     <Skill icon={<WordpressIcon />} label="WordPress" />
-                    <Skill icon={<ScrumIcon />} label="Scrum" />
+                    <Skill icon={<DockerIcon />} label="Docker" />
 
                 </div>
             </div>
@@ -202,7 +202,7 @@ export default function Curriculo() {
 
             {/* UNB / PISAC */}
             <div className="cvTimelineItem">
-                <div className="cvTimelineYear">Out 2024 — Presente</div>
+                <div className="cvTimelineYear">Out 2024 — Jul 2025</div>
 
                 <div className="cvTimelineContent">
                 <div className="cvTimelineTitle">Pesquisadora de Design e Front-end</div>
