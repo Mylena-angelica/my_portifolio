@@ -2,6 +2,6 @@
 export const NAV_LINKS = [
   { label: "Home", to: "/" },
   { label: "Skills", to: "/skills" },
-  { label: "Portfólio", to: "/portfolio" },
+  { label: "Portifólio", to: "/portifolio" },
   { label: "Currículo", to: "/curriculo" },
 ];

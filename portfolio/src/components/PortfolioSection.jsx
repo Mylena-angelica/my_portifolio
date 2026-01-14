@@ -81,6 +81,12 @@ export default function PortfolioSection() {
               </div>
             </article>
           ))}
+        </div>       
+
+        <div className="portfolio__more">
+          <a href="/portifolio" className="portfolio__moreBtn">
+            Veja mais projetos
+          </a>
         </div>
       </div>
     </section>
