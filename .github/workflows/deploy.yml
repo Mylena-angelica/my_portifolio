@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: portifolio
+        working-directory: portfolio
 
     steps:
       - name: Checkout
@@ -31,8 +31,7 @@ jobs:
           node-version: 20
           cache: npm
 
-
-      - name: Install
+      - name: Install dependencies
         run: npm ci
 
       - name: Build
@@ -43,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: portifolio/build
+          path: portfolio/build
 
   deploy:
     needs: build
