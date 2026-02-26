@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 
 import Skills from "./pages/skills";
@@ -16,7 +16,7 @@ function Home() {
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Header />
 
       <Routes>
@@ -26,6 +26,6 @@ export default function App() {
         <Route path="/curriculo" element={<Curriculo />} />
         <Route path="/contato" element={<Contato />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
