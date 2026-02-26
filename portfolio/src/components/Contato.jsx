@@ -48,7 +48,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <form className="contact__form" onSubmit={(e) => e.preventDefault()}>
+      {/*  <form className="contact__form" onSubmit={(e) => e.preventDefault()}>
           <input className="contact__input" type="text" placeholder="Nome | Empresa" />
           <input className="contact__input" type="email" placeholder="Email" />
           <input className="contact__input" type="text" placeholder="Telefone" />
@@ -56,7 +56,7 @@ export default function Contact() {
           <button className="contact__btn" type="submit">
             Enviar mensagem
           </button>
-        </form>
+        </form> */}
       </div>
     </section>
   );

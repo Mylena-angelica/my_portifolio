@@ -14,37 +14,37 @@ const PROJECTS = [
     title: "SolarBanyu",
     subtitle: "IoT / Sustentabilidade / Multidisciplinar",
     image: solarBanyuImg,
-    href: "#contato",
+    path: "/portifolio",
   },
   {
     title: "Apita Cidadão",
     subtitle: " Acesso à informação / GovTech",
     image: apitaImg,
-    href: "#contato",
+    path: "/portifolio",
   },
   {
     title: "Recrutamento inteligente",
     subtitle: "Web Design / SaaS",
     image: recrutamenoImg,
-    href: "#contato",
+    path: "/portifolio",
   },
   {
     title: "Website de Imobiliária",
     subtitle: "Web Design / Real State",
     image: imobiliariaImg,
-    href: "#contato",
+    path: "/portifolio",
   },
   {
     title: "Fintech de saúde",
     subtitle: "UI|UX / Product Design",
     image: fintechImg,
-    href: "#contato",
+    path: "/portifolio",
   },
   {
     title: "Sustentabilidade no canteiro de obras",
     subtitle: "Dados / Sustentabilidade Digital / Obras",
     image: eraImg,
-    href: "#contato",
+    path: "/portifolio",
   },
 ];
 
@@ -72,7 +72,7 @@ export default function PortfolioSection() {
 
                 <a
                   className="pCard__more"
-                  href={p.href}
+                  href={p.path}
                   aria-label={`Ver mais sobre ${p.title}`}
                   title="Ver mais"
                 >

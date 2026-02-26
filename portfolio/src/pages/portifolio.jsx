@@ -19,6 +19,7 @@ import bceImg from "../img/bce.png";
 import simpleImg from "../img/simplenote.png";
 import botoImg from "../img/boto.png";
 import confiarImg from "../img/confiar.png";
+import serImg from "../img/ser.png";
 
 // placeholders (use o que você tiver)
 import placeholderImg from "../img/ApitaHome.png";
@@ -31,7 +32,7 @@ const ALL = "Todos";
    - confidentiality: string ou null
 ========================= */
 const PROJECTS = [
-  {
+ /* {
     title: "Relata",
     subtitle: "Aprimoramento de acessibilidade e conformidade WCAG em plataforma digital",
     categories: ["Acessibilidade", "UX/UI Design", "Auditoria", "Desenvolvimento Frontend", "Wordpress"],
@@ -48,7 +49,7 @@ const PROJECTS = [
 
     confidentiality: "Projeto em andamento sob confidencialidade (NDA). Detalhes técnicos e visuais não podem ser divulgados.",
     related: ["Apita Cidadão", "Altoria"],
-  },
+  },*/
 
   {
     title: "Atloria",
@@ -533,9 +534,9 @@ const PROJECTS = [
         related: ["PISAC", "Jornada Galáctica (Canal Ciência)"]
       },
 
-      {
+     /* {
         title: "SimpleNote – Estudo de Requisitos",
-        subtitle: "Engenharia de Requisitos e validação por prototipação. Remodelagem com foco no usuário",
+        subtitle: "Engenharia de Requisitos e validação por prototipação",
         year: "2023",
         status: "Concluído",
         context: "Projeto Acadêmico",
@@ -545,9 +546,7 @@ const PROJECTS = [
           "Engenharia de Requisitos",
           "Elicitação",
           "Validação",
-          "Figma",
-          "Prototipação",
-          "Modelagem"
+          "Remodelação",
         ],
         image: simpleImg, 
 
@@ -577,7 +576,7 @@ const PROJECTS = [
         },
 
         related: ["BCE Pergamum – Remodelação de Interface"]
-      },
+      },*/
 
 {
   title: "BOTO",
@@ -629,13 +628,13 @@ const PROJECTS = [
 
 {
   title: "Confiar",
-  subtitle: "UI/UX Design / App",
+  subtitle: "Projeto de design de aplicativo com foco em clareza e construção de confiança na experiência",
   year: "2022",
   status: "Concluído",
   context: "Projeto de UI/UX",
 
-  categories: ["Design", "UI/UX", "Produto"],
-  tags: ["Figma", "Prototipação", "Fluxos", "UI", "UX", "Aplicativo"],
+  categories: ["UX/UI Design"],
+  tags: ["Figma", "Prototipação", "Fluxos", "Mobile", "Aplicativo"],
   image: confiarImg,
 
   brief:
@@ -662,71 +661,53 @@ const PROJECTS = [
   related: ["SimpleNote – Estudo de Requisitos", "BOTO"],
 },
 
-      {
-    title: "S.E.R",
-    subtitle: "Web Design / Real State",
-    categories: ["Design", "Front-end"],
-    tags: ["Elementor", "WordPress", "UI", "UX"],
-    image: imobiliariaImg,
+{
+  title: "S.E.R",
+  subtitle: "Projeto mobile e web sobre produtividade e bem-estar com foco em organização pessoal e redução de estresse",
+  year: "2021", 
+  status: "Concluído",
+  context: "Projeto de Bootcamp UI/UX",
 
-    brief: "Site com estrutura de páginas, listagem de imóveis e fluxos de contato/agendamento.",
-    description:
-      "Organização visual e lógica de seções, consistência e melhoria da experiência do usuário, com suporte a implementação via WordPress/Elementor.",
+  categories: ["UX/UI Design"],
+  tags: [
+    "Figma",
+    "User Flow",
+    "Prototipação",
+    "App",
 
-    confidentiality: "Projeto sob confidencialidade (NDA).",
-    branding: { palette: ["#0F4C5C", "#FFFFFF", "#1F1F1F"], rationale: "Imobiliário: confiança e leitura rápida." },
-    prototype: { type: "link", url: "", note: "Protótipo/links podem ser adicionados depois." },
-    links: { repo: "", demo: "", article: "" },
-    related: ["Recrutamento inteligente", "Fintech de saúde"],
+  ],
+  image: serImg, 
+
+  brief:
+    "Aplicativo focado em organização do tempo e redução de estresse por meio de uma experiência simples e acolhedora.",
+
+  description:
+    "S.E.R foi desenvolvido como projeto de UI/UX com foco em organização pessoal e bem-estar. A proposta consistiu em criar uma aplicação que auxiliasse usuários a administrar tarefas e compromissos de forma mais leve, reduzindo sensação de sobrecarga e burnout. O projeto envolveu definição de fluxos principais, construção da arquitetura da informação e criação de protótipos navegáveis no Figma. A experiência foi pensada para ser intuitiva, minimalista e emocionalmente acolhedora, priorizando clareza, hierarquia visual e simplicidade na interação.",
+
+  confidentiality: null,
+
+  branding: {
+    palette: ["#9F5F80", "#FF8474", "#FFC996", "#583D72",],
+    rationale:
+  "A combinação de roxos estruturais e tons quentes cria contraste harmônico e hierarquia visual clara. Os roxos transmitem estabilidade e foco, enquanto os tons quentes estimulam ação e acolhimento. A paleta foi pensada para reduzir sensação de sobrecarga visual, reforçando clareza e conforto na interação."
+  },
+  prototype: {
+    type: "iframe",
+    url: "https://embed.figma.com/proto/c3ZOG7VplkAKURuZAH0qzk/S.E.R?node-id=1-1922&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A1841&starting-point-node-id=1%3A2191&embed-host=share",
+    note: "Protótipo interativo desenvolvido no Figma."
   },
 
-
-  {
-    title: "Debian (Contribuições)",
-    subtitle: "Open Source / Qualidade / Documentação",
-    categories: ["Open Source", "Qualidade"],
-    tags: ["Packaging", "Docs", "Testing", "DebConf"],
-    image: placeholderImg,
-
-    brief: "Empacotamento, testes e documentação para a comunidade Debian.",
-    description:
-      "Atuação em manutenção e melhoria de pacotes, testes e documentação. Participação em iniciativas como Debian Women e palestras/BoF em eventos da comunidade.",
-
-    confidentiality: null,
-    branding: { palette: ["#D70A53", "#FFFFFF", "#1F1F1F"], rationale: "Identidade inspirada no ecossistema Debian." },
-    prototype: { type: "link", url: "", note: "Links e materiais podem ser adicionados depois." },
-    links: { repo: "", demo: "", article: "" },
-    related: ["ERA", "SolarBanyu"],
+  links: {
+    repo: "",
+    demo: "",
+    article: "",
+    figma: "https://www.figma.com/design/c3ZOG7VplkAKURuZAH0qzk/S.E.R?node-id=1-1841&t=byE2DLecnpEYPJ0M-1"
   },
 
+  related: ["Confiar", "SimpleNote – Estudo de Requisitos"]
+},
 
-  {
-    title: "Listen the Sign",
-    subtitle: "Seeds for the Future / Tech4Good",
-    categories: ["Inovação", "Impacto Social"],
-    tags: ["Acessibilidade", "Inclusão", "Produto"],
-    image: placeholderImg,
-
-    brief: "Projeto Tech4Good para facilitar comunicação entre surdos e ouvintes no contexto corporativo.",
-    description:
-      "Criado na competição Tech4Good do Seeds for the Future. Foco em acessibilidade, inclusão e solução orientada ao ambiente profissional.",
-
-    confidentiality: null,
-    branding: { palette: ["#0F4C5C", "#FFFFFF", "#1F1F1F"], rationale: "Seriedade + acessibilidade + clareza." },
-    prototype: { type: "link", url: "", note: "Protótipo/links do projeto podem ser adicionados depois." },
-    links: { repo: "", demo: "", article: "" },
-    related: ["Apita Cidadão", "Atloria"],
-  },
-
-
-
-
-
-
-
-
-
-
+  
 ];
 
 function uniqCategories(list) {
@@ -1044,11 +1025,11 @@ export default function PortfolioPage() {
               </section>
             )}
 
-            {/* CTA */}
+           {/* CTA */}
             <footer className="pfModal__footer">
-              <a className="pfCTA" href="#contato">
+              {/* <a className="pfCTA" href="#contato">
                 Entre em contato
-              </a>
+              </a> */}
               <button className="pfGhost" type="button" onClick={() => setSelected(null)}>
                 Fechar
               </button>

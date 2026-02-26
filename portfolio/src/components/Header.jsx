@@ -26,7 +26,7 @@ export default function Header() {
             </NavLink>
           ))}
         </nav>
-
+{/*
         <div className="hdr__right">
           <button className="hdr__iconBtn" aria-label="Alternar tema">
             <ThemeIcon />
@@ -39,7 +39,7 @@ export default function Header() {
           <NavLink className="hdr__cta" to="/contato">
             Entre em contato
           </NavLink>
-        </div>
+        </div> */}
       </div>
     </header>
   );
