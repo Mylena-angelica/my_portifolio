@@ -16,7 +16,7 @@ function Home() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/my_portifolio">
       <Header />
 
       <Routes>
