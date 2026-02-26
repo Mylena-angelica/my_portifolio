@@ -37,6 +37,7 @@ jobs:
       - name: Build
         env:
           CI: false
+          PUBLIC_URL: /my_portifolio
         run: npm run build
 
       - name: Upload artifact
