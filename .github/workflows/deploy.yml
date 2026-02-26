@@ -30,6 +30,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: portfolio/package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -37,7 +38,6 @@ jobs:
       - name: Build
         env:
           CI: false
-          PUBLIC_URL: /my_portifolio
         run: npm run build
 
       - name: Upload artifact
